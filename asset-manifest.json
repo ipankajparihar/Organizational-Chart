@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Organizational-Chart/static/css/main.fc2ffdd3.css",
+    "main.js": "/Organizational-Chart/static/js/main.9595cf7e.js",
+    "index.html": "/Organizational-Chart/index.html",
+    "main.fc2ffdd3.css.map": "/Organizational-Chart/static/css/main.fc2ffdd3.css.map",
+    "main.9595cf7e.js.map": "/Organizational-Chart/static/js/main.9595cf7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc2ffdd3.css",
+    "static/js/main.9595cf7e.js"
+  ]
+}
