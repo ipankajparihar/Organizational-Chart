@@ -1,0 +1,271 @@
+@media screen and (min-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .Tree ul {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s;
+  }
+
+  .Tree li {
+    float: center;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.5s;
+  }
+
+  /* to draw the connecting lines between the node */
+  .Tree li::before,
+  .Tree li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid black;
+    width: 50%;
+    height: 20px;
+  }
+  .Tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid black;
+  }
+
+  /* draw the last node  vertical connector */
+
+  .Tree li:last-child::before {
+    border-right: 1px solid black;
+    border-radius: 0 5px 0 0;
+  }
+
+  /* draw the border radius in connector */
+
+  .Tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+  }
+
+  /* add downward connectors form the parent nodes */
+  .Tree ul ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-left: 1px solid black;
+    width: 0;
+    height: 20px;
+  }
+
+  .Tree li div {
+    border: 1px solid black;
+    padding: 1px 1px;
+    text-decoration: none;
+    color: #645e5e;
+    font-size: 11px;
+    margin: auto;
+    display: inline-block;
+    transition: all 0.8s;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  * {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .Tree ul {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s;
+  }
+
+  .Tree li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.5s;
+  }
+
+  .Tree li::before,
+  .Tree li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1.5px solid black;
+    width: 50%;
+    height: 20px;
+  }
+  .Tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid black;
+  }
+
+  .Tree li:last-child::before {
+    border-right: 1px solid black;
+    border-radius: 0 5px 0 0;
+  }
+
+  .Tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+  }
+
+  .Tree ul ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-left: 1px solid black;
+    width: 0;
+    height: 20px;
+  }
+
+  .Tree li div {
+    border: 1px solid black;
+    padding: 1px 1px;
+    text-decoration: none;
+    color: #645e5e;
+    font-size: 7px;
+    display: inline-block;
+    align-items: center;
+    transition: all 0.8s;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .Tree ul {
+    padding-top: 10px;
+    position: relative;
+    transition: all 0.5s;
+  }
+
+  .Tree li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 15px 1px 0 1px;
+    transition: all 0.5s;
+  }
+
+  .Tree li::before,
+  .Tree li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid black;
+    width: 50%;
+    height: 10px;
+  }
+  .Tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid black;
+  }
+
+  .Tree li:last-child::before {
+    border-right: 1px solid black;
+    border-radius: 0 2px 0 0;
+  }
+
+  .Tree li:first-child::after {
+    border-radius: 2px 0 0 0;
+  }
+
+  .Tree ul ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-left: 1px solid black;
+    width: 0;
+    height: 10px;
+  }
+
+  .Tree li div {
+    border: 1px solid black;
+    padding: 1px 1px;
+    text-decoration: none;
+    color: #645e5e;
+    font-size: 12px;
+    display: inline-block;
+    transition: all 0.8s;
+  }
+}
+
+/* remove left and right connectors from the child elements */
+
+.Tree li:only-child::after,
+.Tree li:only-child::before {
+  display: none;
+}
+
+.Tree li:only-child {
+  padding-top: 0;
+}
+
+/* remove left connector from the first child and right connector from last child */
+.Tree li:first-child::before,
+.Tree li:last-child::after {
+  border: 0 none;
+}
+
+.Tree li div:hover {
+  background-color: rgb(146, 146, 193);
+  color: white;
+  cursor: pointer;
+}
+
+/* apply the hover effect to all the downward node from parent */
+.Tree li div:hover + ul li div {
+  background-color: rgb(146, 146, 193);
+  color: rgb(215, 210, 210);
+  border: 1px solid #6e7b91;
+}
+
+.Tree li div:hover + ul li button {
+  background-color: rgb(146, 146, 193);
+  color: rgb(215, 210, 210);
+  border: 1px solid #6e7b91;
+}
+
+.Tree li div:hover + ul li::after,
+.Tree li div:hover + ul li::before,
+.Tree li div:hover + ul::before,
+.Tree li div:hover + ul ul::before {
+  border-color: #6e7b91;
+}
+
+button {
+  display: block;
+  margin-top: 2px;
+  padding: 2px 5px;
+  background-color: #ddd;
+  color: black;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  font-size: 10px;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: #bbb;
+}

@@ -1,0 +1,166 @@
+[
+  {
+    "name": "Alice Anderson",
+    "designation": "Founder",
+    "email": "alice.anderson@example.com",
+    "children": [
+      {
+        "name": "Carol CEO",
+        "designation": "CEO",
+        "email": "carol.ceo@example.com",
+        "children": [
+          {
+            "name": "Frank Sales Mgr",
+            "designation": "Sales Manager",
+            "email": "frank.sales@example.com",
+            "children": [
+              {
+                "name": "Jack Sales TL",
+                "designation": "Sales Team Leader",
+                "email": "jack.tl@example.com",
+                "children": [
+                  {
+                    "name": "Rachel Sales Rep",
+                    "designation": "Sales Representative",
+                    "email": "rachel.salesrep@example.com"
+                  },
+                  {
+                    "name": "Sam Sales Rep",
+                    "designation": "Sales Representative",
+                    "email": "sam.salesrep@example.com"
+                  }
+                ]
+              },
+              {
+                "name": "Kelly Sales TL",
+                "designation": "Sales Team Leader",
+                "email": "kelly.tl@example.com",
+                "children": [
+                  {
+                    "name": "Victor Sales Rep",
+                    "designation": "Sales Representative",
+                    "email": "victor.salesrep@example.com"
+                  },
+                  {
+                    "name": "Tina Sales Rep",
+                    "designation": "Sales Representative",
+                    "email": "tina.salesrep@example.com"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Grace Marketing Mgr",
+            "designation": "Marketing Manager",
+            "email": "grace.marketing@example.com",
+            "children": [
+              {
+                "name": "Leo Mktg TL",
+                "designation": "Marketing Team Leader",
+                "email": "leo.mtl@example.com",
+                "children": [
+                  {
+                    "name": "Xavier Rep",
+                    "designation": "Marketer",
+                    "email": "xavier.marketer@example.com"
+                  },
+                  {
+                    "name": "wendy Rep",
+                    "designation": "Marketer",
+                    "email": "wendy.marketer@example.com"
+                  }
+                ]
+              },
+              {
+                "name": "Maria Mktg TL",
+                "designation": "Marketing Team Leader",
+                "email": "maria.mtl@example.com"
+              }
+            ]
+          },
+          {
+            "name": "Henry Ops Mgr",
+            "designation": "Operations Manager",
+            "email": "henry.ops@example.com",
+            "children": [
+              {
+                "name": "Nathan Ops TL",
+                "designation": "Operations Team Leader",
+                "email": "nathan.Opstl@example.com",
+                "children": [
+                  {
+                    "name": "Yara Ops Staff",
+                    "designation": "Operation Staff",
+                    "email": "yara.ops@example.com"
+                  },
+                  {
+                    "name": "Zach Ops Staff",
+                    "designation": "Operation Staff",
+                    "email": "zach.ops@example.com"
+                  }
+                ]
+              },
+              {
+                "name": "Olivia Ops TL",
+                "designation": "Operations Team Leader",
+                "email": "olivia.Opstl@example.com"
+              }
+            ]
+          },
+          {
+            "name": "Irene Tech Mgr",
+            "designation": "Technology Manager",
+            "email": "irene.tech@example.com",
+            "children": [
+              {
+                "name": "Paul Tech TL",
+                "designation": "Technology Team Leader",
+                "email": "paul.techtl@example.com",
+                "children": [
+                  {
+                    "name": "Alex Tech Staff",
+                    "designation": "Technology Staff",
+                    "email": "alex.tech@example.com"
+                  },
+                  {
+                    "name": "Bella Tech Staff",
+                    "designation": "Technology Staff",
+                    "email": "bella.tech@example.com"
+                  }
+                ]
+              },
+              {
+                "name": "Quinn Tech TL",
+                "designation": "Technology Team Leader",
+                "email": "quinn.techtl@example.com",
+                "children": [
+                  {
+                    "name": "Chris Tech Staff",
+                    "designation": "Technology Staff",
+                    "email": "chris.tech@example.com"
+                  },
+                  {
+                    "name": "Dana Tech Staff",
+                    "designation": "Technology Staff",
+                    "email": "dana.tech@example.com"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "David HR",
+        "designation": "CHRO",
+        "email": "david.hr@example.com"
+      },
+      {
+        "name": "Eric CFO",
+        "designation": "CFO",
+        "email": "eric.cfo@example.com"
+      }
+    ]
+  }
+]
